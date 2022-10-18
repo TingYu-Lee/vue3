@@ -51,3 +51,13 @@ npm run test:unit
 npm run build
 npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```
+
+## Vue.js - The Progressive JavaScript Framework
+
+√ Add TypeScript? ...  / Yes
+√ Add JSX Support? ...  / Yes
+√ Add Vue Router for Single Page Application development? ...  / Yes
+√ Add Pinia for state management? ...  / Yes
+√ Add Vitest for Unit Testing? ...  / Yes
+√ Add Cypress for End-to-End testing? ...  / Yes
+√ Add ESLint for code quality? ... No / 
