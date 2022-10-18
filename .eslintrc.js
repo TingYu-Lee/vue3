@@ -14,8 +14,13 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-console': process.env.NODE_ENV === 'production'
+      ? 'warn'
+      : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production'
+      ? 'warn'
+      : 'off',
     'linebreak-style': ['error', 'windows'], // 修正選取行尾順序錯誤 ( windows / unix )
+    'multiline-ternary': ['error', 'always'], // 強制三元換行
   },
 };
