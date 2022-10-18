@@ -84,3 +84,14 @@ vue-cli產出的設定檔，只會掃 `.vue`，不包含 `.ts` / `.js`
 以 `vue` 為例:
 - 'airbnb-base' ( `.ts` / `.js` )
 - '@vue/airbnb' ( `.vue` )
+
+### eslint --init
+√ How would you like to use ESLint? · style       
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · vue
+√ Does your project use TypeScript? · / Yes
+√ Where does your code run? · browser
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · airbnb      
+√ What format do you want your config file to be in? · JavaScript
+√ Would you like to install them now with npm? · / Yes
