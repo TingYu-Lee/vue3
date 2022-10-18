@@ -2,4 +2,24 @@
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "modifications",
+    "editor.codeActionsOnSave": {
+      // For ESLint
+      "source.fixAll.eslint": true,
+      // For TSLint
+      "source.fixAll.tslint": true,
+      // For Stylelint
+      "source.fixAll.stylelint": true,
+      // For markdown
+      "source.fixAll.markdownlint": true
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "workbench.colorCustomizations": {
+    
+    },
+    "eslint.alwaysShowStatus": true
 }
