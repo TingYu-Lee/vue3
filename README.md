@@ -61,3 +61,37 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 √ Add Vitest for Unit Testing? ...  / Yes
 √ Add Cypress for End-to-End testing? ...  / Yes
 √ Add ESLint for code quality? ... No / 
+
+## ESLint
+### create 專案時就要勾選
+create app 時就勾選
+因為各框架 ( `vue`、`react`、`angular` )提供的設定是相對穩定的
+
+### 視情況，再次進行 ESLint 的 init
+有些框架只會針對自己的部分進行設定
+比如:
+vue-cli產出的設定檔，只會掃 `.vue`，不包含 `.ts` / `.js`
+
+### 整合 config ( `.eslintrc.js` ) 時，採 合併 方案
+通常來說，會有 複數 的 config
+- 框架 CLI 工具產出
+- eslint init
+透過 版控 合併，才能確保 ESLint 檢查的範圍。
+
+### `extends` 的順序
+注意規則順序 ( `overwrite` )
+
+以 `vue` 為例:
+- 'airbnb-base' ( `.ts` / `.js` )
+- '@vue/airbnb' ( `.vue` )
+
+### eslint --init
+√ How would you like to use ESLint? · style       
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · vue
+√ Does your project use TypeScript? · / Yes
+√ Where does your code run? · browser
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · airbnb      
+√ What format do you want your config file to be in? · JavaScript
+√ Would you like to install them now with npm? · / Yes
