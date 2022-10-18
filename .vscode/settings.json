@@ -21,5 +21,6 @@
     "workbench.colorCustomizations": {
     
     },
-    "eslint.alwaysShowStatus": true
+    "eslint.alwaysShowStatus": true,
+    "stylelint.validate": ["css", "scss", "vue"],
 }
