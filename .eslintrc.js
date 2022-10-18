@@ -16,5 +16,6 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'linebreak-style': ['error', 'windows'], // 修正選取行尾順序錯誤 ( windows / unix )
   },
 };
