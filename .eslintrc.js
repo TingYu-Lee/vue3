@@ -20,6 +20,17 @@ module.exports = {
     'vue',
     '@typescript-eslint',
   ],
+  settings: {
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
   rules: {
     'no-console': process.env.NODE_ENV === 'production'
       ? 'warn'
@@ -30,5 +41,18 @@ module.exports = {
     'linebreak-style': ['error', 'windows'], // 修正選取行尾順序錯誤 ( windows / unix )
     'multiline-ternary': ['error', 'always'], // 強制三元換行
     'vue/no-multiple-template-root': ['warn'],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+    'import/prefer-default-export': ['off'],
+    'no-plusplus': ['off'],
+    'max-len': ['off', { code: 120 }],
   },
 };
