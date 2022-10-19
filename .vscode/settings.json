@@ -22,5 +22,10 @@
     
     },
     "eslint.alwaysShowStatus": true,
-    "stylelint.validate": ["css", "scss", "vue"],
+    "stylelint.validate": [
+      "css",
+      "scss",
+      "vue"
+    ],
+    "files.eol": "\r\n",
 }
