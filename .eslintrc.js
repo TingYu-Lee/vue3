@@ -38,7 +38,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production'
       ? 'warn'
       : 'off',
-    'linebreak-style': ['error', 'windows'], // 修正選取行尾順序錯誤 ( windows / unix )
+    'linebreak-style': ['error', 'windows'], // 修正選取行尾順序錯誤 ( windows / unix, CRLF / LF )
     'multiline-ternary': ['error', 'always-multiline'],
     'vue/no-multiple-template-root': ['warn'],
     'import/extensions': [
