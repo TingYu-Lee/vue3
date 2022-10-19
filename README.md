@@ -1,97 +1,78 @@
-# vue3
+# Vue3-開發環境
 
-This template should help get you started developing with Vue 3 in Vite.
+## 目的
 
-## Recommended IDE Setup
+- 減少全新專案的初期設定
+- 確保開發環境的一致性
+- 程式碼品質管控
+- 版控交付檢核
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 組建
 
-## Type Support for `.vue` Imports in TS
+- Vue3
+- ESLint
+- ESLint Prettier
+- StyleLint
+- Husky
+- lint-staged
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
+> 以下為 `extension` 的設定筆記
 
 ## Vue.js - The Progressive JavaScript Framework
 
-√ Add TypeScript? ...  / Yes
-√ Add JSX Support? ...  / Yes
-√ Add Vue Router for Single Page Application development? ...  / Yes
-√ Add Pinia for state management? ...  / Yes
-√ Add Vitest for Unit Testing? ...  / Yes
-√ Add Cypress for End-to-End testing? ...  / Yes
-√ Add ESLint for code quality? ... No / 
+_create project memo._
+
+√ Add TypeScript? ... / Yes
+
+√ Add JSX Support? ... / Yes
+
+√ Add Vue Router for Single Page Application development? ... / Yes
+
+√ Add Pinia for state management? ... / Yes
+
+√ Add Vitest for Unit Testing? ... / Yes
+
+√ Add Cypress for End-to-End testing? ... / Yes
+
+√ Add ESLint for code quality? ... No /
 
 ## ESLint
-### create 專案時就要勾選
-create app 時就勾選
+
+### initialize
+
+1. create 專案時勾選，然後保存 `eslintrc.js`\*\*
+
 因為各框架 ( `vue`、`react`、`angular` )提供的設定是相對穩定的
 
-### 視情況，再次進行 ESLint 的 init
-有些框架只會針對自己的部分進行設定
-比如:
-vue-cli產出的設定檔，只會掃 `.vue`，不包含 `.ts` / `.js`
+2. 再進行 ESLint 的 `init`\*\*
 
-### 整合 config ( `.eslintrc.js` ) 時，採 合併 方案
-通常來說，會有 複數 的 config
-- 框架 CLI 工具產出
-- eslint init
-透過 版控 合併，才能確保 ESLint 檢查的範圍。
+3. 透過版控比對 & 合併設定，以框架的為主進行覆蓋
 
-### `extends` 的順序
+#### `extends` 的順序
+
 注意規則順序 ( `overwrite` )
 
 以 `vue` 為例:
+
 - 'airbnb-base' ( `.ts` / `.js` )
 - '@vue/airbnb' ( `.vue` )
 
 ### eslint --init
-√ How would you like to use ESLint? · style       
+
+√ How would you like to use ESLint? · style
+
 √ What type of modules does your project use? · esm
+
 √ Which framework does your project use? · vue
+
 √ Does your project use TypeScript? · / Yes
+
 √ Where does your code run? · browser
+
 √ How would you like to define a style for your project? · guide
-√ Which style guide do you want to follow? · airbnb      
+
+√ Which style guide do you want to follow? · airbnb
+
 √ What format do you want your config file to be in? · JavaScript
+
 √ Would you like to install them now with npm? · / Yes
