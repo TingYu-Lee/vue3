@@ -7,6 +7,17 @@
 - 程式碼品質管控
 - 版控交付檢核
 
+## 功能
+
+### 前置作業
+1. 進行 `npm install`。
+2. 安裝建議的 **VSCode** Extension
+
+### Expected
+1. 錯誤應透過 intellisense 提示 ( ESLint、StyleLint )
+2. 執行 `save` 步驟時，應執行 Lint 的 fix
+3. commit時，此次異動的程式碼如有 lint 的錯誤，會被中斷，請透過 git log 查看錯誤
+
 ## 組建
 
 - Vue3
