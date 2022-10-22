@@ -18,6 +18,8 @@
 2. 執行 `save` 步驟時，應執行 Lint 的 fix
 3. commit時，此次異動的程式碼如有 lint 的錯誤，會被中斷，請透過 git log 查看錯誤
 
+> 檢查 VScode 的 intellisense 是由 `ESLint` 提供，而非 `tsconfig`
+
 ## 組建
 
 - Vue3
