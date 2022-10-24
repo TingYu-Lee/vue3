@@ -1,5 +1,4 @@
 # Vue3-開發環境
-
 ## 目的
 
 - 減少全新專案的初期設定
@@ -7,12 +6,10 @@
 - 程式碼品質管控
 - 版控交付檢核
 
+## 參考
+[vue3-eslint-stylelint-demo (Volar + ESLint + stylelint + husky)](https://github.com/sethidden/vue3-eslint-stylelint-demo)
+
 ## 功能
-
-### 前置作業
-1. 進行 `npm install`。
-2. 安裝建議的 **VSCode** Extension
-
 ### Expected
 1. 錯誤應透過 intellisense 提示 ( ESLint、StyleLint )
 2. 執行 `save` 步驟時，應執行 Lint 的 fix
@@ -23,6 +20,11 @@
 > 請關閉非建議的套件
 > 
 > setting.json 請使用 工作區
+
+### 前置作業
+1. 進行 `npm install`。
+2. 安裝建議的 **VSCode** Extension
+3. **從 console 視窗檢查 `node_modules` 下的 `eslintServer.js` 運行正常**
 
 ## 組建
 
